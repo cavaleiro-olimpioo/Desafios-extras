@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="estilos/index.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="estilos/assets/images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <title>Frontend Mentor | Mortgage repayment calculator</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header>
+      <h1>Mortgage Calculator</h1>
+      <input type="button" value="Clear All">
+  </header>
+  <main>
+      <article>
+        <aside id="calculo"> <!--Parte do calculo-->
+          <fieldset id="valor"> <!--Valor da hipotéca-->
+            <legend>Mortgage Amount</legend>
+            <div class="container">
+              <label class="ico" class="money" for="ival">&pound;</label>
+              <input type="number" onfocus="inputClick()" class="item2" class="money" name="val" id="ival">
+            </div>
+          </fieldset>
+          <fieldset id="ano"> <!--Ano da hipotéca?-->
+            <legend>Mortgage Term</legend>
+            <div class="container">
+              <input type="number" onfocus="inputClick()" class="item2" name="anos" id="ianos">
+              <label class="ico" for="ianos">years</label>
+            </div>
+          </fieldset>
+          <fieldset id="nivel"> <!--Nivel de interesse na hipotéca?-->
+            <legend>Interest Rate</legend>
+            <div class="container">
+              <input type="number" onfocus="inputClick()" class="item2" name="nvl" id="invl">
+              <label class="ico" for="invl">%</label>
+            </div>
+          </fieldset>
+          <fieldset id="tipo"> <!--Tipo de hipotéca?-->
+            <legend>Mortgage Type</legend>
+            <div class="radio"> <!--Tipo 1-->
+              <input type="radio" name="tipo" class="radio" id="ireem"></input>
+              <label for="ireem">Repayment</label> <br>
+            </div>
+            <div class="radio"> <!--Tipo 2-->
+              <input type="radio" name="tipo" class="radio" id="ijuros"></input>
+              <label for="ijuros">Interest Only</label>
+            </div>
+          </fieldset>
+          <input type="button" value="Calculate Repayments" id="calcular"> <!--Calcular-->
+        </aside>
+        <aside id="resultado"> <!--Resultado-->
+          <img src="estilos/assets/images/calculadora.jpg" alt="Calcular">
+          <h2>Results shown here</h2>
+          <p>Complete the form and click “calculate <br> repayments” to see what your monthly <br> repayments would be.</p>
+          <!-- Completed results start -->
+          <!--Your results
+          Your results are shown below based on the information you provided.
+          To adjust the results, edit the form and click “calculate repayments” again.
+          Your monthly repayments
+          Total you'll repay over the term*/ -->
+          <!-- Completed results end -->
+        </aside>
+      </article>
+  </main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/cavaleiro-olimpioo">Cavaleiro-olimpioo</a>.
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

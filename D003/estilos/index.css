@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+:root{
+    --azulico: hsl(228, 45%, 44%);
+    --azul0: hsl(202, 86%, 94%);
+    --azul1: hsl(203, 41%, 72%);
+    --azul2: hsl(200, 26%, 54%);
+    --azul3: hsl(200, 24%, 40%);
+    --azul4: hsl(202, 55%, 16%);
+    --amarelo: hsl(61, 70%, 52%);
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    padding: 20px;
+}
+h1{
+    color: var(--azul4);
+}
+header input{
+    background-color: white;
+    border: none;
+    text-decoration: underline;
+    color: var(--azul2);
+    font-size: 1.3em;
+    margin-top: 10px;
+}
+main{
+    width: 100vw;
+}
+
+aside#calculo{
+    padding: 10px;
+}
+.container{
+    display: flex;
+    border: 2px solid var(--azul2);
+    font-size: 1.5em;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    border-radius: 10px;
+    align-items: center;
+}
+label.ico{
+    padding: 20px;
+    background-color: var(--azul0);
+    color: var(--azul3);
+    font-weight: bold;
+    border-radius: 0px 10px 10px 0px;
+}
+input{
+    border-radius: 10px 0px 0px 10px;
+    border: none;
+    padding: 10px;
+}
+
+.focused{
+    border: 1px solid var(--amarelo);
+}
+
+input.item2{
+    width: 100%;
+    font-size: 1.2em;
+    padding: 17px;
+}
+
+label#money{
+    border-radius: 10px 0px 0px 10px;
+}
+
+input#money{
+    border-radius: 0px 10px 10px 0px;
+    border: none;
+}
+
+div.radio{
+    border-radius: 5px;
+    padding: 12px;
+    border: 2px solid var(--azul2);
+    font-size: 1.5em;
+    color: var(--azul4);
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="radio"]{
+    zoom: 1.8;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+fieldset{
+    border: 0px solid white;
+    margin: 30px 0px;
+}
+
+legend{
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    color: var(--azul3);
+    font-weight: bold;
+}
+
+input#calcular{
+    background-color: var(--amarelo);
+    color: var(--azul4);
+    font-weight: bold;
+    width: 100%;
+    border-radius: 360px;
+    font-size: 1.8em;
+    padding: 20px;
+}
+
+/*Calcular*/
+
+aside#resultado{
+    background-color: var(--azul4);
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-top: 50px;
+}
+aside#resultado p {
+    color: rgba(255, 255, 255, 0.5);
+    margin: 10px 0px;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="estilos/images/favicon-32x32.png">
+  <link rel="stylesheet" href="estilos/style.css">
+  <title>Frontend Mentor | Conference ticket generator</title>
+  <style>
+    @media screen and (min-width: 700px) and (max-width: 990px){
+      h1{
+        font-size: 2.6em;
+      }
+
+      main{
+        width: 690px;
+        margin: auto;
+      }
+
+      br.none{
+        display: none;
+      }
+      br.inline{
+        display: none;
+      }
+      
+    }
+    @media screen and (min-width: 990px){
+      h1{
+        font-size: 3.8em;
+      }
+
+      main{
+        width: 690px;
+        margin: auto;
+      }
+
+      br.none{
+        display: block;
+      }
+
+      br.block{
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="cadastro">
+    <header>
+      <img src="estilos/images/logo-full.svg" alt="Logo codung conf">
+      <h1>Your Journey to Coding Conf 2025 <br class="none"> Starts Here!</h1>
+      <p>Secure your spot at next year's <br class="inline">biggest coding conference.</p>
+    </header>
+    <main>
+      <article id="form">
+        <form action="cadastro.html" method="get" autocomplete="on">
+          <aside id="avatar"> <!------Avatar--------------------------------------->
+            <legend>Upload Avatar</legend>
+            <label for="desciavatar" id="iavatar">
+              <img src="estilos/images/icon-upload.svg" alt=""> <br>
+              <p>Drag and drop or click to upload</p>
+            </label>
+            <input type="file" name="avatar" id="desciavatar" placeholder="Drag and drop or click to upload" required>
+            <p id="Aerror"><img src="estilos/images/icon-info.svg" id="icoAerror" alt=""> Upload your photo (JPG or PNG, max size: 500KB).</p>
+          </aside> <!-------------------------------------------------------------->
+          <aside> <!-------Nome---------------------------------------------------->
+            <legend>Full Name</legend>
+            <input type="text" name="name" class="inpt" id="iname" autocomplete="name" required minlength="3">
+            <p id="Nerror" class="deserror"><img src="estilos/images/icon-info.svg" id="icoNerror" alt="">please enter a valid name</p>
+          </aside> <!-------------------------------------------------------------->
+          <aside> <!------Email---------------------------------------------------->
+            <legend class="Eerror">Email Address</legend>
+            <input type="email" name="email" class="inpt" id="iemail" placeholder="example@email.com" required>
+            <p id="Eerror" class="deserror"><img src="estilos/images/icon-info.svg" id="icoEerror" alt="">please enter a valid email address</p>
+          </aside> <!-------------------------------------------------------------->
+          <aside> <!-------Username------------------------------------------------>
+            <legend class="Gerror">GitHub Username</legend>
+            <input type="text" name="gitname" class="inpt" id="igitname" placeholder="@yourusername" autocomplete="username" required>
+            <p id="Gerror" class="deserror"><img src="estilos/images/icon-info.svg" id="icoGerror" alt="">please enter a valid username</p>
+          </aside> <!-------------------------------------------------------------->
+          <input type="button" value="Generate My Ticket" onclick="envioForm()" id="submit">
+        </form>
+      </article>
+    </main>
+  </div>
+  <div id="res">
+    <header>
+      <img src="estilos/images/logo-full.svg" alt="Logo codung conf">
+      <h1>Congrats, <div class="nome"></div>! Your ticket is ready</h1>
+      <p>We`ve emailed your ticket to <div class="email"></div> and will send updates in the run up to the event.</p>
+    </header>
+    <main>
+      <section id="ticket">
+        <div class="container">
+          <img class="logo" src="estilos/images/logo-full.svg" alt="Logo"> <br>
+          <p>Jan 31, 2025 / Austin, TX</p> <br>
+        </div>
+        <div class="container">
+          <img class="avatar" src="estilos/images/image-avatar.jpg" alt="Sua foto">
+          <div class="nome"></div> <br>
+          <div class="git"></div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <footer>
+    <p>
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="https?//github.com/cavaleiro-olimpioo">Cavaleiro-olimpioo</a>.
+    </p>
+  </footer>
+  <img src="estilos/images/" alt="">
+  <script src="script.js"></script>
+</body>
+</html>

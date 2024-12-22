@@ -1,0 +1,196 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+section{
+    margin: auto;
+    width: 95%;
+    margin-top: 50px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+body{
+    width: 100vw;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f1f1f1;
+    overflow-x: hidden;
+}
+main{
+    width: 98vw;
+}
+:root{
+     --corRoxo1: hsl(254, 88%, 90%);
+     --corRoxo2: hsl(256, 67%, 59%);
+
+     --corAmarelo1: hsl(31, 66%, 93%);
+     --corAmarelo2: hsl(39, 100%, 71%);
+}
+
+article#purple{
+    background-color: var(--corRoxo2);
+    color: white;
+    text-align: center;
+    width: 95%;
+    margin: auto;
+    padding: 50px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+article#purple strong{
+    font-weight: normal;
+    color: var(--corAmarelo2);
+}
+
+h1{
+    font-size: 3.6em;
+    font-weight: 500;
+    line-height: 0.9em;
+}
+
+article#purple img{
+    width: 250px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+article#purple p{
+    font-size: 1.6em;
+}
+
+section#social{
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 20px;
+    width: 95%;
+    background-color: white;
+    padding: 20px;
+}
+
+section#social img{
+    width: 100%;
+}
+p.pp{
+    font-size: 1.9em;
+    font-weight: bold;
+}
+
+section#calend{
+    width: 95%;
+    margin: auto;
+    background-color: var(--corAmarelo2);
+    border-radius: 20px;
+    margin-top: 50px;
+    padding: 20px;
+    padding-bottom: 0px;
+    height: 375px;
+}
+
+section#calend img{
+    margin-top: 30px;
+    width: 330px;
+}
+
+section#calend p.pp{
+    font-size: 2.1em;
+}
+
+section#grafico{
+    background-color: var(--corRoxo1);
+    text-align: center;
+}
+
+section#grafico p{
+    font-size: 1.5em;
+    margin: 30px;
+}
+
+section#grafico p.pp{
+    margin: 20px;
+}
+
+section#grafico img{
+    width: 95%;
+}
+
+section#upgrafico{
+    background-color: var(--corRoxo2);
+    text-align: center;
+}
+
+section#upgrafico p{
+    color: white;
+    font-size: 2.5em;
+}
+
+section#upgrafico img{
+    width: 80%;
+}
+
+
+section#pessoas{
+    background-color: white;
+}
+
+section#pessoas p{
+    font-size: 1.5em;
+}
+
+section#pessoas strong{
+    font-size: 2.5em;
+}
+
+section#pessoas img{
+    width: 230px;
+    margin-top: 20px;
+}
+
+section#create{
+    background-color: var(--corAmarelo1);
+    padding: 50px;
+    padding-bottom: 20px;
+}
+
+section#create p{
+    font-size: 2.5em;
+}
+
+section#create i{
+    color: var(--corRoxo2);
+}
+
+section#create img{
+    width: 300px;
+    margin-top: 30px;
+}
+
+section#write{
+    background-color: var(--corAmarelo2);
+    padding: 50px;
+}
+
+section#write img{
+    width: 350px;
+    margin-top: 30px;
+}
+
+section#write p{
+    font-size: 2.3em;
+}
+
+footer{
+    background-color: #202020;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer a{
+    color: white;
+}
