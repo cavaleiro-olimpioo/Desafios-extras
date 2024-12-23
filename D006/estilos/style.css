@@ -1,0 +1,105 @@
+@charset "UTF-8";
+/*    --preto1: hsl(0, 0%, 20%)
+    --Grey: hsl(0, 0%, 12%)
+    --Grey: hsl(0, 0%, 8%) 
+*/
+:root{
+    --verde: hsl(75, 94%, 57%);
+    --preto1: hsl(0, 0%, 20%);
+    --preto2: hsl(0, 0%, 12%);
+    --preto3: hsl(0, 0%, 8%);
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    text-align: center;
+    background-color: var(--preto3);
+    display: flex;
+    flex-flow: row wrap;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-content: center;
+    overflow-x: hidden;
+}
+main{
+    padding: 50px;
+    flex: 0 1 600px;
+    background-color: var(--preto2);
+    color: white;
+    border-radius: 20px;
+}
+
+h1{
+    font-size: 2.5em;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+h2{
+    color: var(--verde);
+    margin-bottom: 50px;
+}
+
+h3{
+    margin-bottom: 40px;
+}
+
+main img{
+    border-radius: 360px;
+    width: 200px;
+}
+
+main a{
+    background-color: var(--preto1);
+    display: block;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    color: white;
+    text-decoration: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+}
+
+a#github:hover{
+    background-image: linear-gradient(to bottom, rgb(54, 0, 126), black);
+    box-shadow: 0px 0px 10px white;
+}
+
+a#front:hover{
+    background-color: rgb(226, 226, 226);
+    box-shadow: 0px 0px 10px white;
+    color: black;
+}
+
+a#link:hover{
+    background-color: rgb(0, 110, 255);
+    box-shadow: 0px 0px 10px white;
+}
+
+a#x:hover{
+    background-color: rgb(0, 183, 255);
+    box-shadow: 0px 0px 10px white;
+}
+
+a#insta:hover{
+    background-image: linear-gradient(120deg, rgb(87, 0, 128), rgb(204, 3, 204), rgb(255, 238, 0));
+    box-shadow: 0px 0px 10px white;
+}
+
+footer{
+    flex: 1 1 100vw;
+    text-align: center;
+    color: white;
+}
+
+footer a{
+    color: white;
+    font-weight: bold;
+}
