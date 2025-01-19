@@ -1,0 +1,12 @@
+@media  screen and (min-width: 1440px) {
+    .hidden{
+        display: block;
+    }
+    .mac{
+        width: 300px;
+    }
+    .ios{
+        margin-right: 20px;
+        width: 300px;
+    }
+}

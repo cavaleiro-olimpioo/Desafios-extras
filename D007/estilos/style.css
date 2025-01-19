@@ -1,0 +1,233 @@
+@charset "UTF-8";
+
+:root{
+    /*theme 1*/
+    --bg00: hsl(222, 26%, 31%); 
+    --bg10: hwb(223 14% 74%);
+    --bg20: hsl(224, 36%, 15%);
+
+    --blue00: hsl(225, 21%, 49%);
+    --blue10: hsl(224, 28%, 35%);
+
+    --red00: hsl(6, 63%, 50%);
+    --red10: hsl(6, 70%, 34%);
+
+    --orange00: hsl(30, 25%, 89%);
+    --orange10: hsl(28, 16%, 65%);
+
+    --txt00: hsl(0, 0%, 100%);
+    --txt10: hsl(60, 10%, 19%);
+
+
+    /*theme 2==========================================================*/
+    --bg01: hsl(0, 0%, 93%);
+    --bg11: hsl(0, 0%, 90%);
+    --bg21: hsl(0, 5%, 81%);
+
+    --blue01: hsl(185, 42%, 37%);
+    --blue11: hsl(185, 58%, 25%);
+
+    --orange01: hsl(25, 98%, 40%);
+    --orange11: hsl(25, 99%, 27%);
+
+    --yellow01: hsl(45, 7%, 89%);
+    --yellow11: hsl(35, 11%, 61%);
+
+    --txt01: hsl(60, 10%, 19%);
+    --txt11: hsl(0, 0%, 100%);
+
+    /*theme 3==========================================================*/
+    --bg03:hsl(268, 71%, 12%);
+    --bg13:hsl(268, 75%, 9%);
+
+
+    --purple03: hsl(285, 91%, 52%);
+    --purple13: hsl(290, 70%, 36%);
+    --purple23: hsl(281, 89%, 26%);
+    --purple33: hsl(268, 47%, 21%);
+
+    --blue03: hsl(177, 92%, 70%);
+    --blue13: hsl(176, 100%, 44%);
+
+    --txt03: hsl(0, 0%, 100%);
+    --txt13: hsl(52, 100%, 62%);
+    --txt23: hsl(198, 20%, 13%);
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bg00);
+    overflow-x: hidden;
+}
+h1{
+    font-size: 350%;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+}
+.item{
+    flex: auto;
+}
+
+#itemc{
+    flex: 0 1 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 90px;
+}
+header{
+    color: white;
+    padding: 15px;
+}
+header h2{
+    width: auto;
+    font-size: 1em;
+}
+
+.fund{
+    background-color: var(--bg20);
+    width: 85px;
+    display: flex;
+    padding: 5px;
+    height: 34px;
+    border-radius: 360px;
+}
+div{
+    display: inline-block;
+}
+.ball0{
+    background-color: var(--red00);
+    color: var(--red00);
+    flex: auto;
+    border-radius: 360px;
+    cursor: pointer;
+}
+.ball1{
+    background-color: var(--bg20);
+    color: var(--bg20);
+    flex: auto;
+    border-radius: 360px;
+    margin: 0px 5px;
+    cursor: pointer;
+}
+.ball2{
+    background-color: var(--bg20);
+    color: var(--bg20);
+    flex: auto;
+    border-radius: 360px;
+    cursor: pointer;
+}
+#itemp{
+    flex: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+#itemp p{
+    display: inline-block;
+    margin: 0px 10px;
+    height: 50px;
+}
+#ep{
+    width: 105px;
+    height: 30px;
+}
+
+td{
+    background-color: var(--orange00);
+    box-shadow: inset 0px -5px 0px var(--orange10);
+    width: 25%;
+    margin: 10px;
+    height: 20%;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    color: var(--txt01);
+    font-weight: bold;
+}
+td:active{
+    background-color: var(--orange10);
+}
+
+
+main{
+    width: 100%;
+    height: 90%;
+}
+.corpo{
+    width: 90%;
+    height: 80vh;
+    display: flex;
+}
+table{
+    width: 100%;
+    height: 80%;
+    padding: 20px;
+    background-color: var(--bg10);
+    border-radius: 15px;
+    border-collapse: separate;
+    border-spacing: 15px;
+    font-size: 300%;
+}
+
+#res{
+    width: 90%;
+    text-align: center;
+    background-color: var(--bg20);
+    height: 15%;
+    margin: 50px 0px;
+    border-radius: 20px;
+    display: flex;
+    padding: 4%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#resul{
+    font-size: 500%;
+    color: var(--txt00);
+}
+
+.containerr{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.cz{
+    background-color: var(--blue00);
+    color: white;
+    box-shadow: inset 0px -5px 0px var(--blue10);
+}
+.cz:active{
+    background-color: var(--blue10);
+}
+.mtz{
+    background-color: var(--red00);
+    color: white;
+    box-shadow: inset 0px -5px 0px var(--red10);
+}
+.mtz:active{
+    background-color: var(--red10);
+}
+
+.whitebd{
+    background-color: var(--bg11);
+}
+
+.darkbd{
+    background-color: var(--bg13);
+}
